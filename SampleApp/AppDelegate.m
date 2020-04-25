@@ -7,35 +7,49 @@
 //
 
 #import "AppDelegate.h"
+#import "ContactViewController.h"
+#import "VideoViewController.h"
+#import "NewsViewController.h"
+#import "RecommendViewController.h"
 
-@interface AppDelegate ()
+@interface AppDelegate ()<UITabBarControllerDelegate>
 
 @end
 
 @implementation AppDelegate
+@synthesize window = _window;
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame: [[UIScreen mainScreen] bounds]];
+
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    
+    NewsViewController *controller1 = [[NewsViewController alloc] init];
+    VideoViewController *controller2 = [[VideoViewController alloc] init];
+    RecommendViewController *controller3 = [[RecommendViewController alloc] init];
+    ContactViewController *controller4 = [[ContactViewController alloc] init];
+    
+    UIViewController *controller5 = [[UIViewController alloc] init];
+    controller5.view.backgroundColor = [UIColor orangeColor];
+    controller5.tabBarItem.title = @"我的";
+    controller5.tabBarItem.image = [UIImage systemImageNamed:@"person"];
+    
+    [tabBarController setViewControllers:@[controller1, controller2, controller3, controller4, controller5]];
+    
+    tabBarController.delegate = self;
+    
+    UINavigationController *navigationController = [[UINavigationController alloc]initWithRootViewController:tabBarController];
+    navigationController.navigationBar.topItem.title = tabBarController.selectedViewController.tabBarItem.title;
+    self.window.rootViewController = navigationController;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
-
-#pragma mark - UISceneSession lifecycle
-
-
-- (UISceneConfiguration *)application:(UIApplication *)application configurationForConnectingSceneSession:(UISceneSession *)connectingSceneSession options:(UISceneConnectionOptions *)options {
-    // Called when a new scene session is being created.
-    // Use this method to select a configuration to create the new scene with.
-    return [[UISceneConfiguration alloc] initWithName:@"Default Configuration" sessionRole:connectingSceneSession.role];
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController{
+    NSLog(@"did select ViewController");
+    tabBarController.navigationController.navigationBar.topItem.title = tabBarController.selectedViewController.tabBarItem.title;
 }
-
-
-- (void)application:(UIApplication *)application didDiscardSceneSessions:(NSSet<UISceneSession *> *)sceneSessions {
-    // Called when the user discards a scene session.
-    // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-    // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
-}
-
 
 @end

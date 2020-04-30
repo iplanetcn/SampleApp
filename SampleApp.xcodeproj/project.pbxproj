@@ -11,11 +11,13 @@
 		5202DABA2450D5720031FB82 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5202DAB92450D5720031FB82 /* VideoViewController.m */; };
 		524D2AF62451F244000AAC8D /* RecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 524D2AF52451F244000AAC8D /* RecommendViewController.m */; };
 		524D2AF924523C9C000AAC8D /* NormalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 524D2AF824523C9C000AAC8D /* NormalTableViewCell.m */; };
+		52607E832459EBF000028398 /* DeleteCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52607E822459EBF000028398 /* DeleteCellView.m */; };
 		52D0ADC6244E2285003F3149 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D0ADC5244E2285003F3149 /* AppDelegate.m */; };
 		52D0ADCC244E2285003F3149 /* ContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D0ADCB244E2285003F3149 /* ContactViewController.m */; };
 		52D0ADD1244E2286003F3149 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52D0ADD0244E2286003F3149 /* Assets.xcassets */; };
 		52D0ADD4244E2286003F3149 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52D0ADD2244E2286003F3149 /* LaunchScreen.storyboard */; };
 		52D0ADD7244E2286003F3149 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D0ADD6244E2286003F3149 /* main.m */; };
+		52FD6CFB2454A9EA002DB84D /* NewsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FD6CFA2454A9EA002DB84D /* NewsDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		524D2AF52451F244000AAC8D /* RecommendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecommendViewController.m; sourceTree = "<group>"; };
 		524D2AF724523C9C000AAC8D /* NormalTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NormalTableViewCell.h; sourceTree = "<group>"; };
 		524D2AF824523C9C000AAC8D /* NormalTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NormalTableViewCell.m; sourceTree = "<group>"; };
+		52607E812459EBF000028398 /* DeleteCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeleteCellView.h; sourceTree = "<group>"; };
+		52607E822459EBF000028398 /* DeleteCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeleteCellView.m; sourceTree = "<group>"; };
 		527A126224538260008FAA73 /* ContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactViewController.h; sourceTree = "<group>"; };
 		52D0ADC1244E2285003F3149 /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D0ADC4244E2285003F3149 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -36,6 +40,8 @@
 		52D0ADD3244E2286003F3149 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52D0ADD5244E2286003F3149 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52D0ADD6244E2286003F3149 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		52FD6CF92454A9EA002DB84D /* NewsDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsDetailViewController.h; sourceTree = "<group>"; };
+		52FD6CFA2454A9EA002DB84D /* NewsDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +90,10 @@
 				52D0ADD6244E2286003F3149 /* main.m */,
 				524D2AF724523C9C000AAC8D /* NormalTableViewCell.h */,
 				524D2AF824523C9C000AAC8D /* NormalTableViewCell.m */,
+				52FD6CF92454A9EA002DB84D /* NewsDetailViewController.h */,
+				52FD6CFA2454A9EA002DB84D /* NewsDetailViewController.m */,
+				52607E812459EBF000028398 /* DeleteCellView.h */,
+				52607E822459EBF000028398 /* DeleteCellView.m */,
 			);
 			path = SampleApp;
 			sourceTree = "<group>";
@@ -158,9 +168,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5202DABA2450D5720031FB82 /* VideoViewController.m in Sources */,
+				52607E832459EBF000028398 /* DeleteCellView.m in Sources */,
 				52D0ADCC244E2285003F3149 /* ContactViewController.m in Sources */,
 				5202DAB724509DBC0031FB82 /* NewsViewController.m in Sources */,
 				52D0ADC6244E2285003F3149 /* AppDelegate.m in Sources */,
+				52FD6CFB2454A9EA002DB84D /* NewsDetailViewController.m in Sources */,
 				52D0ADD7244E2286003F3149 /* main.m in Sources */,
 				524D2AF62451F244000AAC8D /* RecommendViewController.m in Sources */,
 				524D2AF924523C9C000AAC8D /* NormalTableViewCell.m in Sources */,

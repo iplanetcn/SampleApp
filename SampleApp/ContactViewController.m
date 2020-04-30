@@ -81,8 +81,22 @@
     UIViewController *viewController = [[UIViewController alloc]init];
     viewController.view.backgroundColor = [UIColor redColor];
     viewController.navigationItem.title = @"内容";
+
+    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 180, 40)];
+    [button setTitle:@"show alert dialog" forState:UIControlStateNormal];
+    button.backgroundColor = [UIColor blueColor];
+    [button addTarget:self action:@selector(showAlertDialog) forControlEvents:UIControlEventTouchUpInside];
+    [viewController.view addSubview:button];
     
     [self.navigationController pushViewController:viewController animated:YES];
+}
+
+- (void)showAlertDialog {
+    NSLog(@"show alert dialog");
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"温馨提示" message:@"显示了一个提示框" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *defaultAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action){}];
+    [alertController addAction:defaultAction];
+    [self.navigationController presentViewController:alertController animated:YES completion:nil];
 }
 
 

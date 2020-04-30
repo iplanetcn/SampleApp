@@ -55,6 +55,76 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52378700245B321400C2A09E /* NewsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				52378705245B340E00C2A09E /* list */,
+				52378706245B341600C2A09E /* detail */,
+			);
+			path = NewsViewController;
+			sourceTree = "<group>";
+		};
+		52378701245B327800C2A09E /* VideoViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5202DAB82450D5720031FB82 /* VideoViewController.h */,
+				5202DAB92450D5720031FB82 /* VideoViewController.m */,
+			);
+			path = VideoViewController;
+			sourceTree = "<group>";
+		};
+		52378702245B328F00C2A09E /* ContactViewController */ = {
+			isa = PBXGroup;
+			children = (
+				527A126224538260008FAA73 /* ContactViewController.h */,
+				52D0ADCB244E2285003F3149 /* ContactViewController.m */,
+			);
+			path = ContactViewController;
+			sourceTree = "<group>";
+		};
+		52378703245B32A700C2A09E /* RecommendViewController */ = {
+			isa = PBXGroup;
+			children = (
+				524D2AF42451F244000AAC8D /* RecommendViewController.h */,
+				524D2AF52451F244000AAC8D /* RecommendViewController.m */,
+			);
+			path = RecommendViewController;
+			sourceTree = "<group>";
+		};
+		52378704245B32BD00C2A09E /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				52D0ADD2244E2286003F3149 /* LaunchScreen.storyboard */,
+				52D0ADC4244E2285003F3149 /* AppDelegate.h */,
+				52D0ADC5244E2285003F3149 /* AppDelegate.m */,
+				52D0ADD0244E2286003F3149 /* Assets.xcassets */,
+				52D0ADD6244E2286003F3149 /* main.m */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		52378705245B340E00C2A09E /* list */ = {
+			isa = PBXGroup;
+			children = (
+				5202DAB524509DBC0031FB82 /* NewsViewController.h */,
+				5202DAB624509DBC0031FB82 /* NewsViewController.m */,
+				524D2AF724523C9C000AAC8D /* NormalTableViewCell.h */,
+				524D2AF824523C9C000AAC8D /* NormalTableViewCell.m */,
+				52607E812459EBF000028398 /* DeleteCellView.h */,
+				52607E822459EBF000028398 /* DeleteCellView.m */,
+			);
+			path = list;
+			sourceTree = "<group>";
+		};
+		52378706245B341600C2A09E /* detail */ = {
+			isa = PBXGroup;
+			children = (
+				52FD6CF92454A9EA002DB84D /* NewsDetailViewController.h */,
+				52FD6CFA2454A9EA002DB84D /* NewsDetailViewController.m */,
+			);
+			path = detail;
+			sourceTree = "<group>";
+		};
 		52D0ADB8244E2285003F3149 = {
 			isa = PBXGroup;
 			children = (
@@ -74,26 +144,12 @@
 		52D0ADC3244E2285003F3149 /* SampleApp */ = {
 			isa = PBXGroup;
 			children = (
-				52D0ADC4244E2285003F3149 /* AppDelegate.h */,
-				52D0ADC5244E2285003F3149 /* AppDelegate.m */,
-				527A126224538260008FAA73 /* ContactViewController.h */,
-				52D0ADCB244E2285003F3149 /* ContactViewController.m */,
-				5202DAB82450D5720031FB82 /* VideoViewController.h */,
-				5202DAB92450D5720031FB82 /* VideoViewController.m */,
-				5202DAB524509DBC0031FB82 /* NewsViewController.h */,
-				5202DAB624509DBC0031FB82 /* NewsViewController.m */,
-				524D2AF42451F244000AAC8D /* RecommendViewController.h */,
-				524D2AF52451F244000AAC8D /* RecommendViewController.m */,
-				52D0ADD0244E2286003F3149 /* Assets.xcassets */,
-				52D0ADD2244E2286003F3149 /* LaunchScreen.storyboard */,
 				52D0ADD5244E2286003F3149 /* Info.plist */,
-				52D0ADD6244E2286003F3149 /* main.m */,
-				524D2AF724523C9C000AAC8D /* NormalTableViewCell.h */,
-				524D2AF824523C9C000AAC8D /* NormalTableViewCell.m */,
-				52FD6CF92454A9EA002DB84D /* NewsDetailViewController.h */,
-				52FD6CFA2454A9EA002DB84D /* NewsDetailViewController.m */,
-				52607E812459EBF000028398 /* DeleteCellView.h */,
-				52607E822459EBF000028398 /* DeleteCellView.m */,
+				52378702245B328F00C2A09E /* ContactViewController */,
+				52378700245B321400C2A09E /* NewsViewController */,
+				52378701245B327800C2A09E /* VideoViewController */,
+				52378703245B32A700C2A09E /* RecommendViewController */,
+				52378704245B32BD00C2A09E /* SupportingFiles */,
 			);
 			path = SampleApp;
 			sourceTree = "<group>";

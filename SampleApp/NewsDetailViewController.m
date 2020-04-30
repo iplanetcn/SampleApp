@@ -11,13 +11,12 @@
 
 @interface NewsDetailViewController ()<WKNavigationDelegate>
 
-@property(nonatomic, strong, readwrite) WKWebView *webView;
-@property(nonatomic, strong, readwrite) UIProgressView *progressView;
+@property (nonatomic, strong, readwrite) WKWebView *webView;
+@property (nonatomic, strong, readwrite) UIProgressView *progressView;
 
 @end
 
 @implementation NewsDetailViewController
-
 
 - (void)dealloc
 {
@@ -26,22 +25,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     CGFloat offset = [self.view.window.windowScene statusBarManager].statusBarFrame.size.height + self.navigationController.navigationBar.frame.size.height + 20;
-    
+
     [self.view addSubview:({
         self.webView = [[WKWebView alloc] initWithFrame:CGRectMake(0, offset, self.view.frame.size.width, self.view.frame.size.height - offset)];
         self.webView.navigationDelegate = self;
         self.webView;
     })];
-    
+
     [self.view addSubview:({
         self.progressView = [[UIProgressView alloc] initWithFrame:CGRectMake(0, offset, self.view.frame.size.width, 20)];
         self.progressView;
     })];
-    
+
     [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://time.geekbang.org/"]]];
-    
+
     [self.webView addObserver:self forKeyPath:@"estimatedProgress" options:(NSKeyValueObservingOptionNew) context:nil];
 }
 
@@ -66,11 +65,10 @@
 }
 
 // webview Crash 回调(自动重新加载)
-- (void)webViewWebContentProcessDidTerminate:(WKWebView *)webView{
-    
+- (void)webViewWebContentProcessDidTerminate:(WKWebView *)webView {
 }
 
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey, id> *)change context:(void *)context {
     self.progressView.progress = self.webView.estimatedProgress;
 }
 

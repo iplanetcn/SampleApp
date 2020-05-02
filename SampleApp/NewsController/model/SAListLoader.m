@@ -50,6 +50,8 @@
     [dataTask resume];
 }
 
+#pragma mark - private method
+
 /// 缓存数据
 /// @param array 新闻列表数据
 - (void)_archiveListDataWithArray:(NSArray<SAListItem *> *)array {

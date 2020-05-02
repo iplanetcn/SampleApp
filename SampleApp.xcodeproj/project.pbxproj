@@ -7,41 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5202DAB724509DBC0031FB82 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5202DAB624509DBC0031FB82 /* NewsViewController.m */; };
-		5202DABA2450D5720031FB82 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5202DAB92450D5720031FB82 /* VideoViewController.m */; };
-		524D2AF62451F244000AAC8D /* RecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 524D2AF52451F244000AAC8D /* RecommendViewController.m */; };
-		524D2AF924523C9C000AAC8D /* NormalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 524D2AF824523C9C000AAC8D /* NormalTableViewCell.m */; };
-		52607E832459EBF000028398 /* DeleteCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52607E822459EBF000028398 /* DeleteCellView.m */; };
+		5202DAB724509DBC0031FB82 /* SANewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5202DAB624509DBC0031FB82 /* SANewsViewController.m */; };
+		5202DABA2450D5720031FB82 /* SAVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5202DAB92450D5720031FB82 /* SAVideoViewController.m */; };
+		52378709245B486800C2A09E /* SAListLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 52378708245B486800C2A09E /* SAListLoader.m */; };
+		524D2AF62451F244000AAC8D /* SARecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 524D2AF52451F244000AAC8D /* SARecommendViewController.m */; };
+		524D2AF924523C9C000AAC8D /* SANormalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 524D2AF824523C9C000AAC8D /* SANormalTableViewCell.m */; };
+		52607E832459EBF000028398 /* SADeleteCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52607E822459EBF000028398 /* SADeleteCellView.m */; };
+		526BE76B245CAC0800F5289C /* SAListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 526BE76A245CAC0800F5289C /* SAListItem.m */; };
 		52D0ADC6244E2285003F3149 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D0ADC5244E2285003F3149 /* AppDelegate.m */; };
-		52D0ADCC244E2285003F3149 /* ContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D0ADCB244E2285003F3149 /* ContactViewController.m */; };
+		52D0ADCC244E2285003F3149 /* SAContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D0ADCB244E2285003F3149 /* SAContactViewController.m */; };
 		52D0ADD1244E2286003F3149 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52D0ADD0244E2286003F3149 /* Assets.xcassets */; };
 		52D0ADD4244E2286003F3149 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52D0ADD2244E2286003F3149 /* LaunchScreen.storyboard */; };
 		52D0ADD7244E2286003F3149 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D0ADD6244E2286003F3149 /* main.m */; };
 		52FD6CFB2454A9EA002DB84D /* NewsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FD6CFA2454A9EA002DB84D /* NewsDetailViewController.m */; };
+		E76DCE4E1A416A30F094A0F2 /* libPods-SampleApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6628B66D99800F8C65CE6B2E /* libPods-SampleApp.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5202DAB524509DBC0031FB82 /* NewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
-		5202DAB624509DBC0031FB82 /* NewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
-		5202DAB82450D5720031FB82 /* VideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
-		5202DAB92450D5720031FB82 /* VideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
-		524D2AF42451F244000AAC8D /* RecommendViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecommendViewController.h; sourceTree = "<group>"; };
-		524D2AF52451F244000AAC8D /* RecommendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecommendViewController.m; sourceTree = "<group>"; };
-		524D2AF724523C9C000AAC8D /* NormalTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NormalTableViewCell.h; sourceTree = "<group>"; };
-		524D2AF824523C9C000AAC8D /* NormalTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NormalTableViewCell.m; sourceTree = "<group>"; };
-		52607E812459EBF000028398 /* DeleteCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeleteCellView.h; sourceTree = "<group>"; };
-		52607E822459EBF000028398 /* DeleteCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeleteCellView.m; sourceTree = "<group>"; };
-		527A126224538260008FAA73 /* ContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactViewController.h; sourceTree = "<group>"; };
+		436075D462A383D86111CD79 /* Pods-SampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleApp.release.xcconfig"; path = "Target Support Files/Pods-SampleApp/Pods-SampleApp.release.xcconfig"; sourceTree = "<group>"; };
+		5202DAB524509DBC0031FB82 /* SANewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SANewsViewController.h; sourceTree = "<group>"; };
+		5202DAB624509DBC0031FB82 /* SANewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SANewsViewController.m; sourceTree = "<group>"; };
+		5202DAB82450D5720031FB82 /* SAVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAVideoViewController.h; sourceTree = "<group>"; };
+		5202DAB92450D5720031FB82 /* SAVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAVideoViewController.m; sourceTree = "<group>"; };
+		523608A7245C92AC00BBD31A /* SAListItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAListItem.h; sourceTree = "<group>"; };
+		52378707245B486800C2A09E /* SAListLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAListLoader.h; sourceTree = "<group>"; };
+		52378708245B486800C2A09E /* SAListLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAListLoader.m; sourceTree = "<group>"; };
+		524D2AF42451F244000AAC8D /* SARecommendViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SARecommendViewController.h; sourceTree = "<group>"; };
+		524D2AF52451F244000AAC8D /* SARecommendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SARecommendViewController.m; sourceTree = "<group>"; };
+		524D2AF724523C9C000AAC8D /* SANormalTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SANormalTableViewCell.h; sourceTree = "<group>"; };
+		524D2AF824523C9C000AAC8D /* SANormalTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SANormalTableViewCell.m; sourceTree = "<group>"; };
+		52607E812459EBF000028398 /* SADeleteCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SADeleteCellView.h; sourceTree = "<group>"; };
+		52607E822459EBF000028398 /* SADeleteCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SADeleteCellView.m; sourceTree = "<group>"; };
+		526BE76A245CAC0800F5289C /* SAListItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAListItem.m; sourceTree = "<group>"; };
+		527A126224538260008FAA73 /* SAContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAContactViewController.h; sourceTree = "<group>"; };
 		52D0ADC1244E2285003F3149 /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D0ADC4244E2285003F3149 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		52D0ADC5244E2285003F3149 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		52D0ADCB244E2285003F3149 /* ContactViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactViewController.m; sourceTree = "<group>"; };
+		52D0ADCB244E2285003F3149 /* SAContactViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAContactViewController.m; sourceTree = "<group>"; };
 		52D0ADD0244E2286003F3149 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52D0ADD3244E2286003F3149 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52D0ADD5244E2286003F3149 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52D0ADD6244E2286003F3149 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		52FD6CF92454A9EA002DB84D /* NewsDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsDetailViewController.h; sourceTree = "<group>"; };
 		52FD6CFA2454A9EA002DB84D /* NewsDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsDetailViewController.m; sourceTree = "<group>"; };
+		6628B66D99800F8C65CE6B2E /* libPods-SampleApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SampleApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8FAD16350236B43D141AF23 /* Pods-SampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleApp.debug.xcconfig"; path = "Target Support Files/Pods-SampleApp/Pods-SampleApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,46 +59,71 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E76DCE4E1A416A30F094A0F2 /* libPods-SampleApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		52378700245B321400C2A09E /* NewsViewController */ = {
+		523608A5245C920500BBD31A /* model */ = {
 			isa = PBXGroup;
 			children = (
-				52378705245B340E00C2A09E /* list */,
+				52378707245B486800C2A09E /* SAListLoader.h */,
+				52378708245B486800C2A09E /* SAListLoader.m */,
+				523608A7245C92AC00BBD31A /* SAListItem.h */,
+				526BE76A245CAC0800F5289C /* SAListItem.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		523608A6245C922E00BBD31A /* view */ = {
+			isa = PBXGroup;
+			children = (
+				524D2AF724523C9C000AAC8D /* SANormalTableViewCell.h */,
+				524D2AF824523C9C000AAC8D /* SANormalTableViewCell.m */,
+				52607E812459EBF000028398 /* SADeleteCellView.h */,
+				52607E822459EBF000028398 /* SADeleteCellView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		52378700245B321400C2A09E /* NewsController */ = {
+			isa = PBXGroup;
+			children = (
+				523608A5245C920500BBD31A /* model */,
+				523608A6245C922E00BBD31A /* view */,
+				52378705245B340E00C2A09E /* controller */,
 				52378706245B341600C2A09E /* detail */,
 			);
-			path = NewsViewController;
+			path = NewsController;
 			sourceTree = "<group>";
 		};
-		52378701245B327800C2A09E /* VideoViewController */ = {
+		52378701245B327800C2A09E /* VideoController */ = {
 			isa = PBXGroup;
 			children = (
-				5202DAB82450D5720031FB82 /* VideoViewController.h */,
-				5202DAB92450D5720031FB82 /* VideoViewController.m */,
+				5202DAB82450D5720031FB82 /* SAVideoViewController.h */,
+				5202DAB92450D5720031FB82 /* SAVideoViewController.m */,
 			);
-			path = VideoViewController;
+			path = VideoController;
 			sourceTree = "<group>";
 		};
-		52378702245B328F00C2A09E /* ContactViewController */ = {
+		52378702245B328F00C2A09E /* ContactController */ = {
 			isa = PBXGroup;
 			children = (
-				527A126224538260008FAA73 /* ContactViewController.h */,
-				52D0ADCB244E2285003F3149 /* ContactViewController.m */,
+				527A126224538260008FAA73 /* SAContactViewController.h */,
+				52D0ADCB244E2285003F3149 /* SAContactViewController.m */,
 			);
-			path = ContactViewController;
+			path = ContactController;
 			sourceTree = "<group>";
 		};
-		52378703245B32A700C2A09E /* RecommendViewController */ = {
+		52378703245B32A700C2A09E /* RecommendController */ = {
 			isa = PBXGroup;
 			children = (
-				524D2AF42451F244000AAC8D /* RecommendViewController.h */,
-				524D2AF52451F244000AAC8D /* RecommendViewController.m */,
+				524D2AF42451F244000AAC8D /* SARecommendViewController.h */,
+				524D2AF52451F244000AAC8D /* SARecommendViewController.m */,
 			);
-			path = RecommendViewController;
+			path = RecommendController;
 			sourceTree = "<group>";
 		};
 		52378704245B32BD00C2A09E /* SupportingFiles */ = {
@@ -103,17 +138,13 @@
 			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
-		52378705245B340E00C2A09E /* list */ = {
+		52378705245B340E00C2A09E /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				5202DAB524509DBC0031FB82 /* NewsViewController.h */,
-				5202DAB624509DBC0031FB82 /* NewsViewController.m */,
-				524D2AF724523C9C000AAC8D /* NormalTableViewCell.h */,
-				524D2AF824523C9C000AAC8D /* NormalTableViewCell.m */,
-				52607E812459EBF000028398 /* DeleteCellView.h */,
-				52607E822459EBF000028398 /* DeleteCellView.m */,
+				5202DAB524509DBC0031FB82 /* SANewsViewController.h */,
+				5202DAB624509DBC0031FB82 /* SANewsViewController.m */,
 			);
-			path = list;
+			path = controller;
 			sourceTree = "<group>";
 		};
 		52378706245B341600C2A09E /* detail */ = {
@@ -130,6 +161,8 @@
 			children = (
 				52D0ADC3244E2285003F3149 /* SampleApp */,
 				52D0ADC2244E2285003F3149 /* Products */,
+				BDF76D9C9EA7E37132B74841 /* Pods */,
+				B6570475CB0C70ECA34EF6F4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,13 +178,30 @@
 			isa = PBXGroup;
 			children = (
 				52D0ADD5244E2286003F3149 /* Info.plist */,
-				52378702245B328F00C2A09E /* ContactViewController */,
-				52378700245B321400C2A09E /* NewsViewController */,
-				52378701245B327800C2A09E /* VideoViewController */,
-				52378703245B32A700C2A09E /* RecommendViewController */,
+				52378702245B328F00C2A09E /* ContactController */,
+				52378700245B321400C2A09E /* NewsController */,
+				52378701245B327800C2A09E /* VideoController */,
+				52378703245B32A700C2A09E /* RecommendController */,
 				52378704245B32BD00C2A09E /* SupportingFiles */,
 			);
 			path = SampleApp;
+			sourceTree = "<group>";
+		};
+		B6570475CB0C70ECA34EF6F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6628B66D99800F8C65CE6B2E /* libPods-SampleApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BDF76D9C9EA7E37132B74841 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D8FAD16350236B43D141AF23 /* Pods-SampleApp.debug.xcconfig */,
+				436075D462A383D86111CD79 /* Pods-SampleApp.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +211,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52D0ADDA244E2286003F3149 /* Build configuration list for PBXNativeTarget "SampleApp" */;
 			buildPhases = (
+				05935D49889EBBADB0A5AF24 /* [CP] Check Pods Manifest.lock */,
 				52D0ADBD244E2285003F3149 /* Sources */,
 				52D0ADBE244E2285003F3149 /* Frameworks */,
 				52D0ADBF244E2285003F3149 /* Resources */,
@@ -218,20 +269,47 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		05935D49889EBBADB0A5AF24 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SampleApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		52D0ADBD244E2285003F3149 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5202DABA2450D5720031FB82 /* VideoViewController.m in Sources */,
-				52607E832459EBF000028398 /* DeleteCellView.m in Sources */,
-				52D0ADCC244E2285003F3149 /* ContactViewController.m in Sources */,
-				5202DAB724509DBC0031FB82 /* NewsViewController.m in Sources */,
+				52378709245B486800C2A09E /* SAListLoader.m in Sources */,
+				5202DABA2450D5720031FB82 /* SAVideoViewController.m in Sources */,
+				52607E832459EBF000028398 /* SADeleteCellView.m in Sources */,
+				52D0ADCC244E2285003F3149 /* SAContactViewController.m in Sources */,
+				5202DAB724509DBC0031FB82 /* SANewsViewController.m in Sources */,
 				52D0ADC6244E2285003F3149 /* AppDelegate.m in Sources */,
 				52FD6CFB2454A9EA002DB84D /* NewsDetailViewController.m in Sources */,
+				526BE76B245CAC0800F5289C /* SAListItem.m in Sources */,
 				52D0ADD7244E2286003F3149 /* main.m in Sources */,
-				524D2AF62451F244000AAC8D /* RecommendViewController.m in Sources */,
-				524D2AF924523C9C000AAC8D /* NormalTableViewCell.m in Sources */,
+				524D2AF62451F244000AAC8D /* SARecommendViewController.m in Sources */,
+				524D2AF924523C9C000AAC8D /* SANormalTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +439,7 @@
 		};
 		52D0ADDB244E2286003F3149 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8FAD16350236B43D141AF23 /* Pods-SampleApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -378,6 +457,7 @@
 		};
 		52D0ADDC244E2286003F3149 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 436075D462A383D86111CD79 /* Pods-SampleApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

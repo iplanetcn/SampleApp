@@ -6,11 +6,11 @@
 //  Copyright © 2020 John Lee. All rights reserved.
 //
 
-#import "ContactViewController.h"
+#import "SAContactViewController.h"
 
 #pragma mark ViewController
 
-@interface ContactViewController ()
+@interface SAContactViewController ()
 
 @end
 
@@ -46,7 +46,7 @@
 
 @end
 
-@implementation ContactViewController
+@implementation SAContactViewController
 
 - (instancetype)init {
     self = [super init];

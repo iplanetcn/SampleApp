@@ -1,8 +1,8 @@
 //
-//  VideoViewController.h
+//  ContactViewController.h
 //  SampleApp
 //
-//  Created by John Lee on 2020/4/23.
+//  Created by John Lee on 2020/4/22.
 //  Copyright © 2020 John Lee. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface VideoViewController : UIViewController
+@interface SAContactViewController : UIViewController
 
 @end
 

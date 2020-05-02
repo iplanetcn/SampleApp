@@ -6,9 +6,9 @@
 //  Copyright © 2020 John Lee. All rights reserved.
 //
 
-#import "DeleteCellView.h"
+#import "SADeleteCellView.h"
 
-@interface DeleteCellView ()
+@interface SADeleteCellView ()
 
 @property (nonatomic, strong, readwrite) UIView *backgroundView;
 @property (nonatomic, strong, readwrite) UIButton *deleteButton;
@@ -16,7 +16,7 @@
 
 @end
 
-@implementation DeleteCellView
+@implementation SADeleteCellView
 
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];

@@ -1,8 +1,8 @@
 //
-//  ContactViewController.h
+//  RecommendViewController.h
 //  SampleApp
 //
-//  Created by John Lee on 2020/4/22.
+//  Created by John Lee on 2020/4/23.
 //  Copyright © 2020 John Lee. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ContactViewController : UIViewController
+@interface SARecommendViewController : UIViewController
 
 @end
 

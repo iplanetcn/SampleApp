@@ -6,13 +6,13 @@
 //  Copyright © 2020 John Lee. All rights reserved.
 //
 
-#import "RecommendViewController.h"
+#import "SARecommendViewController.h"
 
-@interface RecommendViewController ()<UIScrollViewDelegate>
+@interface SARecommendViewController ()<UIScrollViewDelegate>
 
 @end
 
-@implementation RecommendViewController
+@implementation SARecommendViewController
 
 - (instancetype)init
 {

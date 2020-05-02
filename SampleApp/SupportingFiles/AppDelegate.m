@@ -7,10 +7,10 @@
 //
 
 #import "AppDelegate.h"
-#import "ContactViewController.h"
-#import "VideoViewController.h"
-#import "NewsViewController.h"
-#import "RecommendViewController.h"
+#import "SAContactViewController.h"
+#import "SAVideoViewController.h"
+#import "SANewsViewController.h"
+#import "SARecommendViewController.h"
 
 @interface AppDelegate ()<UITabBarControllerDelegate>
 
@@ -24,10 +24,10 @@
     
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
 
-    NewsViewController *newsViewController = [[NewsViewController alloc] init];
-    VideoViewController *videoViewController = [[VideoViewController alloc] init];
-    RecommendViewController *recommendViewController = [[RecommendViewController alloc] init];
-    ContactViewController *contactViewController = [[ContactViewController alloc] init];
+    SANewsViewController *newsViewController = [[SANewsViewController alloc] init];
+    SAVideoViewController *videoViewController = [[SAVideoViewController alloc] init];
+    SARecommendViewController *recommendViewController = [[SARecommendViewController alloc] init];
+    SAContactViewController *contactViewController = [[SAContactViewController alloc] init];
 
     UIViewController *mineViewController = [[UIViewController alloc] init];
     mineViewController.view.backgroundColor = [UIColor orangeColor];

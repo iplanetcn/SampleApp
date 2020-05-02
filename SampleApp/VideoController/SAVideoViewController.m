@@ -6,13 +6,13 @@
 //  Copyright © 2020 John Lee. All rights reserved.
 //
 
-#import "VideoViewController.h"
+#import "SAVideoViewController.h"
 
-@interface VideoViewController ()<UICollectionViewDelegate, UICollectionViewDataSource>
+@interface SAVideoViewController ()<UICollectionViewDelegate, UICollectionViewDataSource>
 
 @end
 
-@implementation VideoViewController
+@implementation SAVideoViewController
 
 - (instancetype)init
 {

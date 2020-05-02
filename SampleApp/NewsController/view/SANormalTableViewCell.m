@@ -83,6 +83,15 @@
 }
 
 - (void)layoutTableViewCellWithItem:(SAListItem *)item {
+    
+//    如果已点击,则置灰标题
+    BOOL hasRead = [[NSUserDefaults standardUserDefaults]boolForKey:item.uniqueKey];
+    if (hasRead) {
+        self.titleLabel.textColor = [UIColor lightGrayColor];
+    } else {
+        self.titleLabel.textColor = [UIColor blackColor];
+    }
+    
     self.titleLabel.text = item.title;
 
     self.sourceLabel.text = item.authorName;

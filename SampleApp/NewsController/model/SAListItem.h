@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /// 列表结构化数据
-@interface SAListItem : NSObject
+@interface SAListItem : NSObject<NSSecureCoding>
 
 @property(nonatomic, copy, readwrite) NSString *uniqueKey;
 @property(nonatomic, copy, readwrite) NSString *title;

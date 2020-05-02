@@ -84,6 +84,8 @@
     SANormalTableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     detailViewController.title = [NSString stringWithFormat:@"%@", cell.cellTitleString];
     [self.navigationController pushViewController:detailViewController animated:YES];
+    
+    [[NSUserDefaults standardUserDefaults] setBool:YES forKey: item.uniqueKey];
 }
 
 - (void)tableViewCell:(UITableViewCell *)tableViewCell clickDeleteButton:(UIButton *)deleteButton {

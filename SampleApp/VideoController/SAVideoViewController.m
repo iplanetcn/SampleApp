@@ -7,6 +7,7 @@
 //
 
 #import "SAVideoViewController.h"
+#import "SAVideoCoverView.h"
 
 @interface SAVideoViewController ()<UICollectionViewDelegate, UICollectionViewDataSource>
 
@@ -31,14 +32,14 @@
     UICollectionViewFlowLayout *flowlayout = [[UICollectionViewFlowLayout alloc] init];
     flowlayout.minimumLineSpacing = 10;
     flowlayout.minimumInteritemSpacing = 10;
-    flowlayout.itemSize = CGSizeMake((self.view.frame.size.width - 10) / 2, 300);
+    flowlayout.itemSize = CGSizeMake(self.view.bounds.size.width, self.view.bounds.size.width / 16 * 9);
 
     UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:flowlayout];
 
     collectionView.delegate = self;
     collectionView.dataSource = self;
 
-    [collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"UICollectionViewCell"];
+    [collectionView registerClass:[SAVideoCoverView class] forCellWithReuseIdentifier:@"SAVideoCoverView"];
 
     [self.view addSubview:collectionView];
 }
@@ -48,11 +49,14 @@
 }
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"UICollectionViewCell" forIndexPath:indexPath];
-    cell.backgroundColor = [UIColor redColor];
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"SAVideoCoverView" forIndexPath:indexPath];
+    if ([cell isKindOfClass:[SAVideoCoverView class]]) {
+        [((SAVideoCoverView *) cell) layoutWithVideoCoverUrl:@"cover" videoUrl:@"http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"];
+    }
     return cell;
 }
 
+/*
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.item % 3 == 0) {
         return CGSizeMake(self.view.frame.size.width, 100);
@@ -60,5 +64,6 @@
         return CGSizeMake((self.view.frame.size.width - 10) / 2, 300);
     }
 }
+*/
 
 @end

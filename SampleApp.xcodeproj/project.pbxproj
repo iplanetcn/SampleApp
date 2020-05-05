@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5202DAB724509DBC0031FB82 /* SANewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5202DAB624509DBC0031FB82 /* SANewsViewController.m */; };
 		5202DABA2450D5720031FB82 /* SAVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5202DAB92450D5720031FB82 /* SAVideoViewController.m */; };
+		520B47DB2461CC2100E2E864 /* SAVideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 520B47DA2461CC2100E2E864 /* SAVideoPlayer.m */; };
 		52378709245B486800C2A09E /* SAListLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 52378708245B486800C2A09E /* SAListLoader.m */; };
 		524D2AF62451F244000AAC8D /* SARecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 524D2AF52451F244000AAC8D /* SARecommendViewController.m */; };
 		524D2AF924523C9C000AAC8D /* SANormalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 524D2AF824523C9C000AAC8D /* SANormalTableViewCell.m */; };
@@ -19,6 +20,7 @@
 		52D0ADD1244E2286003F3149 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52D0ADD0244E2286003F3149 /* Assets.xcassets */; };
 		52D0ADD4244E2286003F3149 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52D0ADD2244E2286003F3149 /* LaunchScreen.storyboard */; };
 		52D0ADD7244E2286003F3149 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D0ADD6244E2286003F3149 /* main.m */; };
+		52EB850D245DF67D009C58A0 /* SAVideoCoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EB850C245DF67D009C58A0 /* SAVideoCoverView.m */; };
 		52FD6CFB2454A9EA002DB84D /* NewsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FD6CFA2454A9EA002DB84D /* NewsDetailViewController.m */; };
 		E76DCE4E1A416A30F094A0F2 /* libPods-SampleApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6628B66D99800F8C65CE6B2E /* libPods-SampleApp.a */; };
 /* End PBXBuildFile section */
@@ -29,6 +31,8 @@
 		5202DAB624509DBC0031FB82 /* SANewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SANewsViewController.m; sourceTree = "<group>"; };
 		5202DAB82450D5720031FB82 /* SAVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAVideoViewController.h; sourceTree = "<group>"; };
 		5202DAB92450D5720031FB82 /* SAVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAVideoViewController.m; sourceTree = "<group>"; };
+		520B47D92461CC2100E2E864 /* SAVideoPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAVideoPlayer.h; sourceTree = "<group>"; };
+		520B47DA2461CC2100E2E864 /* SAVideoPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAVideoPlayer.m; sourceTree = "<group>"; };
 		523608A7245C92AC00BBD31A /* SAListItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAListItem.h; sourceTree = "<group>"; };
 		52378707245B486800C2A09E /* SAListLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAListLoader.h; sourceTree = "<group>"; };
 		52378708245B486800C2A09E /* SAListLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAListLoader.m; sourceTree = "<group>"; };
@@ -48,6 +52,8 @@
 		52D0ADD3244E2286003F3149 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52D0ADD5244E2286003F3149 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52D0ADD6244E2286003F3149 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		52EB850B245DF67D009C58A0 /* SAVideoCoverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAVideoCoverView.h; sourceTree = "<group>"; };
+		52EB850C245DF67D009C58A0 /* SAVideoCoverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAVideoCoverView.m; sourceTree = "<group>"; };
 		52FD6CF92454A9EA002DB84D /* NewsDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsDetailViewController.h; sourceTree = "<group>"; };
 		52FD6CFA2454A9EA002DB84D /* NewsDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsDetailViewController.m; sourceTree = "<group>"; };
 		6628B66D99800F8C65CE6B2E /* libPods-SampleApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SampleApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,6 +110,10 @@
 			children = (
 				5202DAB82450D5720031FB82 /* SAVideoViewController.h */,
 				5202DAB92450D5720031FB82 /* SAVideoViewController.m */,
+				52EB850B245DF67D009C58A0 /* SAVideoCoverView.h */,
+				52EB850C245DF67D009C58A0 /* SAVideoCoverView.m */,
+				520B47D92461CC2100E2E864 /* SAVideoPlayer.h */,
+				520B47DA2461CC2100E2E864 /* SAVideoPlayer.m */,
 			);
 			path = VideoController;
 			sourceTree = "<group>";
@@ -301,6 +311,8 @@
 			files = (
 				52378709245B486800C2A09E /* SAListLoader.m in Sources */,
 				5202DABA2450D5720031FB82 /* SAVideoViewController.m in Sources */,
+				52EB850D245DF67D009C58A0 /* SAVideoCoverView.m in Sources */,
+				520B47DB2461CC2100E2E864 /* SAVideoPlayer.m in Sources */,
 				52607E832459EBF000028398 /* SADeleteCellView.m in Sources */,
 				52D0ADCC244E2285003F3149 /* SAContactViewController.m in Sources */,
 				5202DAB724509DBC0031FB82 /* SANewsViewController.m in Sources */,

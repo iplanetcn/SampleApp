@@ -82,6 +82,7 @@
     return self;
 }
 
+
 - (void)layoutTableViewCellWithItem:(SAListItem *)item {
     
 //    如果已点击,则置灰标题
@@ -104,29 +105,41 @@
     self.timeLabel.text = item.date;
     [self.timeLabel sizeToFit];
     self.timeLabel.frame = CGRectMake(self.commentLabel.frame.origin.x + self.commentLabel.frame.size.width + 15, self.timeLabel.frame.origin.y, self.timeLabel.frame.size.width, self.timeLabel.frame.size.height);
-    
-//    NSThread *downloadImageThread = [[NSThread alloc] initWithBlock:^{
-//
-//
-//    }];
-//
-//    downloadImageThread.name=@"downloadImageThread";
-//    [downloadImageThread start];
 
-//    Use GCD to download image
+///    use NSThread to download image
+    
+    /*
+    NSThread *downloadImageThread = [[NSThread alloc] initWithBlock:^{
+
+
+    }];
+
+    downloadImageThread.name=@"downloadImageThread";
+    [downloadImageThread start];
+    */
+
+///    Use GCD to download image
+    /*
     dispatch_queue_global_t downloadQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-    
+
     dispatch_queue_main_t mainQueue = dispatch_get_main_queue();
-    
+
     dispatch_async(downloadQueue, ^{
         UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:item.thumbnailPicS]]];
         dispatch_async(mainQueue, ^{
             self.rightImageView.image = image;
         });
     });
+    */
+///    use SDWebImage to download image
+    [self.rightImageView sd_setImageWithURL:[NSURL URLWithString:item.thumbnailPicS] placeholderImage:[UIImage imageNamed:@"fisher"]];
+    
+    /*
+    [self.rightImageView sd_setImageWithURL:[NSURL URLWithString:item.thumbnailPicS] completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
 
-//    use SDWebImage to download image
-//    [self.rightImageView sd_setImageWithURL:[NSURL URLWithString:item.thumbnailPicS] placeholderImage:[UIImage imageNamed:@"fisher"]];
+        NSLog(@"");
+    }];
+    */
     
 }
 

@@ -39,8 +39,8 @@
     [_videoItem addObserver:self forKeyPath:@"status" options:NSKeyValueObservingOptionNew context:nil];
     [_videoItem addObserver:self forKeyPath:@"loadedTimeRanges" options:NSKeyValueObservingOptionNew context:nil];
 
-    CMTime duration = _videoItem.duration;
-    CGFloat videoDuration = CMTimeGetSeconds(duration);
+//    CMTime duration = _videoItem.duration;
+//    CGFloat videoDuration = CMTimeGetSeconds(duration);
 
     _avPlayer = [AVPlayer playerWithPlayerItem:_videoItem];
     [_avPlayer addPeriodicTimeObserverForInterval:CMTimeMake(1, 1) queue:dispatch_get_main_queue() usingBlock:^(CMTime time) {

@@ -8,6 +8,7 @@
 
 #import "SAVideoViewController.h"
 #import "SAVideoCoverView.h"
+#import "SAVideoToolbar.h"
 
 @interface SAVideoViewController ()<UICollectionViewDelegate, UICollectionViewDataSource>
 
@@ -32,7 +33,7 @@
     UICollectionViewFlowLayout *flowlayout = [[UICollectionViewFlowLayout alloc] init];
     flowlayout.minimumLineSpacing = 10;
     flowlayout.minimumInteritemSpacing = 10;
-    flowlayout.itemSize = CGSizeMake(self.view.bounds.size.width, self.view.bounds.size.width / 16 * 9);
+    flowlayout.itemSize = CGSizeMake(self.view.bounds.size.width, self.view.bounds.size.width / 16 * 9 + SAVideoToolbarHeight);
 
     UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:flowlayout];
 

@@ -9,6 +9,7 @@
 #import "SANormalTableViewCell.h"
 #import "SAListItem.h"
 #import <SDWebImage/SDWebImage.h>
+#import "SAScreen.h"
 
 @interface SANormalTableViewCell ()
 
@@ -27,7 +28,7 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         [self.contentView addSubview:({
-            self.titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 15, 240, 50)];
+            self.titleLabel = [[UILabel alloc] initWithFrame:UIRect(20, 15, 240, 50)];
             self.titleLabel.font = [UIFont systemFontOfSize:16];
             self.titleLabel.textColor = [UIColor blackColor];
             self.titleLabel.textColor = [UIColor secondaryLabelColor];
@@ -37,28 +38,28 @@
         })];
 
         [self.contentView addSubview:({
-            self.sourceLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 70, 50, 20)];
+            self.sourceLabel = [[UILabel alloc] initWithFrame:UIRect(20, 70, 50, 20)];
             self.sourceLabel.font = [UIFont systemFontOfSize:12];
             self.sourceLabel.textColor = [UIColor grayColor];
             self.sourceLabel;
         })];
 
         [self.contentView addSubview:({
-            self.commentLabel = [[UILabel alloc] initWithFrame:CGRectMake(100, 70, 50, 20)];
+            self.commentLabel = [[UILabel alloc] initWithFrame:UIRect(100, 70, 50, 20)];
             self.commentLabel.font = [UIFont systemFontOfSize:12];
             self.commentLabel.textColor = [UIColor grayColor];
             self.commentLabel;
         })];
 
         [self.contentView addSubview:({
-            self.timeLabel = [[UILabel alloc] initWithFrame:CGRectMake(150, 70, 50, 20)];
+            self.timeLabel = [[UILabel alloc] initWithFrame:UIRect(150, 70, 50, 20)];
             self.timeLabel.font = [UIFont systemFontOfSize:12];
             self.timeLabel.textColor = [UIColor grayColor];
             self.timeLabel;
         })];
 
         [self.contentView addSubview:({
-            self.rightImageView = [[UIImageView alloc] initWithFrame:CGRectMake(280, 15, 100, 70)];
+            self.rightImageView = [[UIImageView alloc] initWithFrame:UIRect(270, 15, 100, 70)];
             self.rightImageView.contentMode = UIViewContentModeScaleAspectFit;
             self.rightImageView;
         })];

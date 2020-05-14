@@ -11,6 +11,7 @@
 #import "SAVideoViewController.h"
 #import "SANewsViewController.h"
 #import "SARecommendViewController.h"
+#import "SASplashView.h"
 
 @interface AppDelegate ()<UITabBarControllerDelegate>
 
@@ -21,7 +22,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    
+
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
 
     SANewsViewController *newsViewController = [[SANewsViewController alloc] init];
@@ -42,6 +43,12 @@
     navigationController.navigationBar.topItem.title = tabBarController.selectedViewController.tabBarItem.title;
     self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
+
+    [self.window addSubview:({
+        SASplashView *splashView = [[SASplashView alloc] initWithFrame:self.window.bounds];
+        splashView;
+    })];
+
     return YES;
 }
 

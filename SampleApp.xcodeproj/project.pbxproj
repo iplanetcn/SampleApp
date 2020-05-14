@@ -17,6 +17,8 @@
 		524D2AF924523C9C000AAC8D /* SANormalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 524D2AF824523C9C000AAC8D /* SANormalTableViewCell.m */; };
 		52607E832459EBF000028398 /* SADeleteCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52607E822459EBF000028398 /* SADeleteCellView.m */; };
 		526BE76B245CAC0800F5289C /* SAListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 526BE76A245CAC0800F5289C /* SAListItem.m */; };
+		52A015EC246C67EB0085AB6C /* SASplashView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A015EB246C67EB0085AB6C /* SASplashView.m */; };
+		52A015EE246C6DAC0085AB6C /* icon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 52A015ED246C6DAC0085AB6C /* icon.bundle */; };
 		52D0ADC6244E2285003F3149 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D0ADC5244E2285003F3149 /* AppDelegate.m */; };
 		52D0ADCC244E2285003F3149 /* SAContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D0ADCB244E2285003F3149 /* SAContactViewController.m */; };
 		52D0ADD1244E2286003F3149 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52D0ADD0244E2286003F3149 /* Assets.xcassets */; };
@@ -50,6 +52,9 @@
 		52607E822459EBF000028398 /* SADeleteCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SADeleteCellView.m; sourceTree = "<group>"; };
 		526BE76A245CAC0800F5289C /* SAListItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAListItem.m; sourceTree = "<group>"; };
 		527A126224538260008FAA73 /* SAContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAContactViewController.h; sourceTree = "<group>"; };
+		52A015EA246C67EB0085AB6C /* SASplashView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SASplashView.h; sourceTree = "<group>"; };
+		52A015EB246C67EB0085AB6C /* SASplashView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SASplashView.m; sourceTree = "<group>"; };
+		52A015ED246C6DAC0085AB6C /* icon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = icon.bundle; sourceTree = "<group>"; };
 		52D0ADC1244E2285003F3149 /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D0ADC4244E2285003F3149 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		52D0ADC5244E2285003F3149 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -203,6 +208,9 @@
 				52378704245B32BD00C2A09E /* SupportingFiles */,
 				520B47DF2461FB2400E2E864 /* SAScreen.h */,
 				520B47E02461FB2400E2E864 /* SAScreen.m */,
+				52A015EA246C67EB0085AB6C /* SASplashView.h */,
+				52A015EB246C67EB0085AB6C /* SASplashView.m */,
+				52A015ED246C6DAC0085AB6C /* icon.bundle */,
 			);
 			path = SampleApp;
 			sourceTree = "<group>";
@@ -284,6 +292,7 @@
 			files = (
 				52D0ADD4244E2286003F3149 /* LaunchScreen.storyboard in Resources */,
 				52D0ADD1244E2286003F3149 /* Assets.xcassets in Resources */,
+				52A015EE246C6DAC0085AB6C /* icon.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +331,7 @@
 				52378709245B486800C2A09E /* SAListLoader.m in Sources */,
 				520B47DE2461E5FE00E2E864 /* SAVideoToolbar.m in Sources */,
 				5202DABA2450D5720031FB82 /* SAVideoViewController.m in Sources */,
+				52A015EC246C67EB0085AB6C /* SASplashView.m in Sources */,
 				52EB850D245DF67D009C58A0 /* SAVideoCoverView.m in Sources */,
 				520B47DB2461CC2100E2E864 /* SAVideoPlayer.m in Sources */,
 				52607E832459EBF000028398 /* SADeleteCellView.m in Sources */,

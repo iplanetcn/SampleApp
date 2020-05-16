@@ -9,6 +9,7 @@
 #import "SAVideoCoverView.h"
 #import "SAVideoPlayer.h"
 #import "SAVideoToolbar.h"
+#import "SAVideoInfo.h"
 //#import <UIKit/UIKit.h>
 //#import <AVKit/AVKit.h>
 
@@ -66,7 +67,14 @@
 - (void)layoutWithVideoCoverUrl:(NSString *)videoCoverUrl videoUrl:(NSString *)videoUrl{
     _coverView.image = [UIImage imageNamed:videoCoverUrl];
     _videoUrl = videoUrl;
-    [_toolbar layoutWithModel:nil];
+    
+    SAVideoInfo *info = [[SAVideoInfo alloc]init];
+    info.nick = @"John";
+    info.comment = @"100";
+    info.like = @"100";
+    info.share = @"100";
+    
+    [_toolbar layoutWithModel:info];
 }
 
 

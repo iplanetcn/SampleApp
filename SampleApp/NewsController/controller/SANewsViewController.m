@@ -8,10 +8,10 @@
 
 #import "SANewsViewController.h"
 #import "SANormalTableViewCell.h"
-#import "NewsDetailViewController.h"
 #import "SADeleteCellView.h"
 #import "SAListLoader.h"
 #import "SAListItem.h"
+#import "SAMediator.h"
 
 @interface SANewsViewController ()<UITableViewDelegate, UITableViewDataSource, SANormalTableViewCellDelege>
 
@@ -80,10 +80,16 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     SAListItem *item = [self.dataArray objectAtIndex:[indexPath row]];
-    NewsDetailViewController *detailViewController = [[NewsDetailViewController alloc] initWithUrlString: item.url];
-    SANormalTableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    detailViewController.title = [NSString stringWithFormat:@"%@", cell.cellTitleString];
-    [self.navigationController pushViewController:detailViewController animated:YES];
+    
+//    __kindof UIViewController *detailViewController = [SAMediator detailViewControllerWithUrl:item.url];
+//    SANormalTableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+//    detailViewController.title = [NSString stringWithFormat:@"%@", cell.cellTitleString];
+//    [self.navigationController pushViewController:detailViewController animated:YES];
+  
+    [SAMediator openUrl:@"detail://" params:@{@"url":item.url, @"controller":self.navigationController}];
+    
+//    Class cls = [SAMediator classForProtocol:@protocol(SADetailViewControllerProtocol)];
+//    [self.navigationController pushViewController:[[cls alloc] detailViewControllerWithUrl:item.url] animated:YES];
     
     [[NSUserDefaults standardUserDefaults] setBool:YES forKey: item.uniqueKey];
 }

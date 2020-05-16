@@ -7,6 +7,7 @@
 //
 
 #import "SAVideoToolbar.h"
+#import "SAVideoInfo.h"
 
 @interface SAVideoToolbar ()
 
@@ -99,75 +100,78 @@
     return self;
 }
 
-    - (void)layoutWithModel:(id)model {
-    _avatarImageView.image = [UIImage systemImageNamed:@"person.circle"];
-    _nickLabel.text = @"昵称";
+- (void)layoutWithModel:(id)model {
+    if ([model isKindOfClass: [SAVideoInfo class]]) {
+        SAVideoInfo *info = (SAVideoInfo *)model;
+        
+        _avatarImageView.image = [UIImage systemImageNamed:@"person.circle"];
+        _nickLabel.text = info.nick;
+
+        _commentImageView.image = [UIImage systemImageNamed:@"text.bubble"];
+        _commentLabel.text = info.comment;
+
+        _likeImageView.image = [UIImage systemImageNamed:@"hand.thumbsup"];
+        _likeLabel.text = info.like;
+
+        _shareImageView.image = [UIImage systemImageNamed:@"square.and.arrow.up"];
+        _shareLabel.text = info.share;
+    }
     
-    _commentImageView.image = [UIImage systemImageNamed:@"text.bubble"];
-    _commentLabel.text = @"100";
-    
-    _likeImageView.image = [UIImage systemImageNamed:@"hand.thumbsup"];
-    _likeLabel.text = @"100";
-    
-    _shareImageView.image = [UIImage systemImageNamed:@"square.and.arrow.up"];
-    _shareLabel.text = @"100";
-    
+
     [NSLayoutConstraint activateConstraints:@[
-        [NSLayoutConstraint constraintWithItem:_avatarImageView
-                                     attribute:NSLayoutAttributeCenterY
-                                     relatedBy:NSLayoutRelationEqual
-                                        toItem:self
-                                     attribute:NSLayoutAttributeCenterY
-                                    multiplier:1
-                                      constant:0],
-        
-        [NSLayoutConstraint constraintWithItem:_avatarImageView
-                                     attribute:NSLayoutAttributeLeft
-                                     relatedBy:NSLayoutRelationEqual
-                                        toItem:self
-                                     attribute:NSLayoutAttributeLeft
-                                    multiplier:1
-                                      constant:15],
-        
-        [NSLayoutConstraint constraintWithItem:_avatarImageView
-                                     attribute:NSLayoutAttributeWidth
-                                     relatedBy:NSLayoutRelationEqual
-                                        toItem:nil
-                                     attribute:NSLayoutAttributeNotAnAttribute
-                                    multiplier:1
-                                      constant:30],
-        
-        [NSLayoutConstraint constraintWithItem:_avatarImageView
-                                     attribute:NSLayoutAttributeHeight
-                                     relatedBy:NSLayoutRelationEqual
-                                        toItem:nil
-                                     attribute:NSLayoutAttributeNotAnAttribute
-                                    multiplier:1
-                                      constant:30],
-        
-        [NSLayoutConstraint constraintWithItem:_nickLabel
-                                     attribute:NSLayoutAttributeCenterY
-                                     relatedBy:NSLayoutRelationEqual
-                                        toItem:_avatarImageView
-                                     attribute:NSLayoutAttributeCenterY
-                                    multiplier:1
-                                      constant:0],
-        
-        [NSLayoutConstraint constraintWithItem:_nickLabel
-                                     attribute:NSLayoutAttributeLeft
-                                     relatedBy:NSLayoutRelationEqual
-                                        toItem:_avatarImageView
-                                     attribute:NSLayoutAttributeRight
-                                    multiplier:1
-                                      constant:0]
-        
+         [NSLayoutConstraint constraintWithItem:_avatarImageView
+                                      attribute:NSLayoutAttributeCenterY
+                                      relatedBy:NSLayoutRelationEqual
+                                         toItem:self
+                                      attribute:NSLayoutAttributeCenterY
+                                     multiplier:1
+                                       constant:0],
+
+         [NSLayoutConstraint constraintWithItem:_avatarImageView
+                                      attribute:NSLayoutAttributeLeft
+                                      relatedBy:NSLayoutRelationEqual
+                                         toItem:self
+                                      attribute:NSLayoutAttributeLeft
+                                     multiplier:1
+                                       constant:15],
+
+         [NSLayoutConstraint constraintWithItem:_avatarImageView
+                                      attribute:NSLayoutAttributeWidth
+                                      relatedBy:NSLayoutRelationEqual
+                                         toItem:nil
+                                      attribute:NSLayoutAttributeNotAnAttribute
+                                     multiplier:1
+                                       constant:30],
+
+         [NSLayoutConstraint constraintWithItem:_avatarImageView
+                                      attribute:NSLayoutAttributeHeight
+                                      relatedBy:NSLayoutRelationEqual
+                                         toItem:nil
+                                      attribute:NSLayoutAttributeNotAnAttribute
+                                     multiplier:1
+                                       constant:30],
+
+         [NSLayoutConstraint constraintWithItem:_nickLabel
+                                      attribute:NSLayoutAttributeCenterY
+                                      relatedBy:NSLayoutRelationEqual
+                                         toItem:_avatarImageView
+                                      attribute:NSLayoutAttributeCenterY
+                                     multiplier:1
+                                       constant:0],
+
+         [NSLayoutConstraint constraintWithItem:_nickLabel
+                                      attribute:NSLayoutAttributeLeft
+                                      relatedBy:NSLayoutRelationEqual
+                                         toItem:_avatarImageView
+                                      attribute:NSLayoutAttributeRight
+                                     multiplier:1
+                                       constant:0]
+
     ]];
-    
+
     NSString *vlfString = @"H:|-15-[_avatarImageView]-0-[_nickLabel]->=0-[_commentImageView]-0-[_commentLabel]-15-[_likeImageView]-0-[_likeLabel]-15-[_shareImageView]-0-[_shareLabel]-15-|";
 
-    [NSLayoutConstraint activateConstraints:[NSLayoutConstraint constraintsWithVisualFormat:vlfString options:NSLayoutFormatAlignAllCenterY metrics:nil views:NSDictionaryOfVariableBindings(_avatarImageView,_nickLabel,_commentImageView,_commentLabel,_likeImageView,_likeLabel,_shareImageView,_shareLabel)]];
-    
-    
+    [NSLayoutConstraint activateConstraints:[NSLayoutConstraint constraintsWithVisualFormat:vlfString options:NSLayoutFormatAlignAllCenterY metrics:nil views:NSDictionaryOfVariableBindings(_avatarImageView, _nickLabel, _commentImageView, _commentLabel, _likeImageView, _likeLabel, _shareImageView, _shareLabel)]];
 }
 
 @end

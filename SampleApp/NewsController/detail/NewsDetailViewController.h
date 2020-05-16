@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SAMediator.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
+//@interface NewsDetailViewController : UIViewController<SADetailViewControllerProtocol>
 @interface NewsDetailViewController : UIViewController
 
 - (instancetype)initWithUrlString:(NSString *)urlString;

@@ -22,8 +22,10 @@
 		52D0ADC6244E2285003F3149 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D0ADC5244E2285003F3149 /* AppDelegate.m */; };
 		52D0ADCC244E2285003F3149 /* SAContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D0ADCB244E2285003F3149 /* SAContactViewController.m */; };
 		52D0ADD1244E2286003F3149 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52D0ADD0244E2286003F3149 /* Assets.xcassets */; };
-		52D0ADD4244E2286003F3149 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52D0ADD2244E2286003F3149 /* LaunchScreen.storyboard */; };
 		52D0ADD7244E2286003F3149 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D0ADD6244E2286003F3149 /* main.m */; };
+		52E100AC246FB6B000F10DBC /* SAMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E100AB246FB6B000F10DBC /* SAMediator.m */; };
+		52E100AE2470392700F10DBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52E100AD2470392700F10DBC /* LaunchScreen.storyboard */; };
+		52E100B124703CF400F10DBC /* SAVideoInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E100B024703CF400F10DBC /* SAVideoInfo.m */; };
 		52EB850D245DF67D009C58A0 /* SAVideoCoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52EB850C245DF67D009C58A0 /* SAVideoCoverView.m */; };
 		52FD6CFB2454A9EA002DB84D /* NewsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FD6CFA2454A9EA002DB84D /* NewsDetailViewController.m */; };
 		E76DCE4E1A416A30F094A0F2 /* libPods-SampleApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6628B66D99800F8C65CE6B2E /* libPods-SampleApp.a */; };
@@ -60,9 +62,13 @@
 		52D0ADC5244E2285003F3149 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		52D0ADCB244E2285003F3149 /* SAContactViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAContactViewController.m; sourceTree = "<group>"; };
 		52D0ADD0244E2286003F3149 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		52D0ADD3244E2286003F3149 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52D0ADD5244E2286003F3149 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52D0ADD6244E2286003F3149 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		52E100AA246FB6B000F10DBC /* SAMediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMediator.h; sourceTree = "<group>"; };
+		52E100AB246FB6B000F10DBC /* SAMediator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMediator.m; sourceTree = "<group>"; };
+		52E100AD2470392700F10DBC /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		52E100AF24703CF400F10DBC /* SAVideoInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAVideoInfo.h; sourceTree = "<group>"; };
+		52E100B024703CF400F10DBC /* SAVideoInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAVideoInfo.m; sourceTree = "<group>"; };
 		52EB850B245DF67D009C58A0 /* SAVideoCoverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAVideoCoverView.h; sourceTree = "<group>"; };
 		52EB850C245DF67D009C58A0 /* SAVideoCoverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAVideoCoverView.m; sourceTree = "<group>"; };
 		52FD6CF92454A9EA002DB84D /* NewsDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsDetailViewController.h; sourceTree = "<group>"; };
@@ -127,6 +133,8 @@
 				520B47DA2461CC2100E2E864 /* SAVideoPlayer.m */,
 				520B47DC2461E5FE00E2E864 /* SAVideoToolbar.h */,
 				520B47DD2461E5FE00E2E864 /* SAVideoToolbar.m */,
+				52E100AF24703CF400F10DBC /* SAVideoInfo.h */,
+				52E100B024703CF400F10DBC /* SAVideoInfo.m */,
 			);
 			path = VideoController;
 			sourceTree = "<group>";
@@ -152,7 +160,7 @@
 		52378704245B32BD00C2A09E /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
-				52D0ADD2244E2286003F3149 /* LaunchScreen.storyboard */,
+				52E100AD2470392700F10DBC /* LaunchScreen.storyboard */,
 				52D0ADC4244E2285003F3149 /* AppDelegate.h */,
 				52D0ADC5244E2285003F3149 /* AppDelegate.m */,
 				52D0ADD0244E2286003F3149 /* Assets.xcassets */,
@@ -211,6 +219,8 @@
 				52A015EA246C67EB0085AB6C /* SASplashView.h */,
 				52A015EB246C67EB0085AB6C /* SASplashView.m */,
 				52A015ED246C6DAC0085AB6C /* icon.bundle */,
+				52E100AA246FB6B000F10DBC /* SAMediator.h */,
+				52E100AB246FB6B000F10DBC /* SAMediator.m */,
 			);
 			path = SampleApp;
 			sourceTree = "<group>";
@@ -290,7 +300,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52D0ADD4244E2286003F3149 /* LaunchScreen.storyboard in Resources */,
+				52E100AE2470392700F10DBC /* LaunchScreen.storyboard in Resources */,
 				52D0ADD1244E2286003F3149 /* Assets.xcassets in Resources */,
 				52A015EE246C6DAC0085AB6C /* icon.bundle in Resources */,
 			);
@@ -329,8 +339,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				52378709245B486800C2A09E /* SAListLoader.m in Sources */,
+				52E100B124703CF400F10DBC /* SAVideoInfo.m in Sources */,
 				520B47DE2461E5FE00E2E864 /* SAVideoToolbar.m in Sources */,
 				5202DABA2450D5720031FB82 /* SAVideoViewController.m in Sources */,
+				52E100AC246FB6B000F10DBC /* SAMediator.m in Sources */,
 				52A015EC246C67EB0085AB6C /* SASplashView.m in Sources */,
 				52EB850D245DF67D009C58A0 /* SAVideoCoverView.m in Sources */,
 				520B47DB2461CC2100E2E864 /* SAVideoPlayer.m in Sources */,
@@ -348,17 +360,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		52D0ADD2244E2286003F3149 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				52D0ADD3244E2286003F3149 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		52D0ADD8244E2286003F3149 /* Debug */ = {

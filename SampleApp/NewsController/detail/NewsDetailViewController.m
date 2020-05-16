@@ -19,9 +19,20 @@
 
 @implementation NewsDetailViewController
 
-- (void)dealloc
-{
++ (void)load {
+    [SAMediator registerScheme:@"detail://" processBlock:^(NSDictionary *_Nonnull params) {
+        NSString *url = [params objectForKey:@"url"];
+        UINavigationController *navigationController  = [params objectForKey:@"controller"];
+        NewsDetailViewController *controller = [[NewsDetailViewController alloc] initWithUrlString:url];
+        [navigationController pushViewController:controller animated:YES];
+    }];
+
+//    [SAMediator registerProtocol:@protocol(SADetailViewControllerProtocol) class:[self class]];
+}
+
+- (void)dealloc {
     [self.webView removeObserver:self forKeyPath:@"estimatedProgress"];
+    [self.webView removeObserver:self forKeyPath:@"title"];
 }
 
 - (instancetype)initWithUrlString:(NSString *)urlString {
@@ -51,6 +62,7 @@
     [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.acticleUrl]]];
 
     [self.webView addObserver:self forKeyPath:@"estimatedProgress" options:(NSKeyValueObservingOptionNew) context:nil];
+    [self.webView addObserver:self forKeyPath:@"title" options:NSKeyValueObservingOptionNew context:NULL];
 }
 
 //
@@ -78,6 +90,12 @@
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey, id> *)change context:(void *)context {
+    if ([keyPath isEqualToString:@"title"]) {
+        if (object == self.webView) {
+            self.navigationController.title = self.webView.title;
+        }
+    }
+
     self.progressView.progress = self.webView.estimatedProgress;
 }
 

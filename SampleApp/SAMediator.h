@@ -11,16 +11,16 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol SADetailViewControllerProtocol <NSObject>
-
-- (__kindof UIViewController *)detailViewControllerWithUrl:(NSString *)detailUrl;
-
-@end
+//@protocol SADetailViewControllerProtocol <NSObject>
+//
+//- (__kindof UIViewController *)detailViewControllerWithUrl:(NSString *)detailUrl;
+//
+//@end
 
 @interface SAMediator : NSObject
 
 // 组件化路由方式一:Target-Action(通过反射去实现)中心化管理,优化:可以通过扩展去增加
-+ (__kindof UIViewController *)detailViewControllerWithUrl:(NSString *)detailUrl;
+//+ (__kindof UIViewController *)detailViewControllerWithUrl:(NSString *)detailUrl;
 
 // 组件化路由方式二:Url-Scheme
 typedef void(^SAMediatorProcessBlock)(NSDictionary *params);

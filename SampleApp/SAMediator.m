@@ -10,11 +10,11 @@
 
 @implementation SAMediator
 
-+ (__kindof UIViewController *)detailViewControllerWithUrl:(NSString *)detailUrl {
-    Class detialCls = NSClassFromString(@"NewsDetailViewController");
-    UIViewController *controller = [[detialCls alloc] performSelector:NSSelectorFromString(@"initWithUrlString:") withObject:detailUrl];
-    return controller;
-}
+//+ (__kindof UIViewController *)detailViewControllerWithUrl:(NSString *)detailUrl {
+//    Class detialCls = NSClassFromString(@"NewsDetailViewController");
+//    UIViewController *controller = [[detialCls alloc] performSelector:NSSelectorFromString(@"initWithUrlString:") withObject:detailUrl];
+//    return controller;
+//}
 
 #pragma mark -
 
